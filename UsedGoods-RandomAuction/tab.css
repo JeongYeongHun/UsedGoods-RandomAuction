@@ -1,0 +1,97 @@
+.tab 
+{
+    list-style: none;
+    margin: 0 auto 40px;
+    padding: 38px 0 0 0;
+    position: relative;
+    width: 90%;
+}
+.tab input[type='radio'] 
+{
+    display: none;
+}
+.tab .tab-nav
+{
+    display: table;
+    table-layout: fixed;
+    width: 60%;
+}
+.tab .tab-nav label 
+{
+    display: table-cell;
+    background-color: #FFFFFF;
+    color: #666666;
+    padding: 15px;
+    text-align: center;
+    transition: all .3s ease 0s;
+}
+.tab .tab-nav label:hover 
+{
+    cursor: pointer;
+    background: rgb(170,170,170); 
+    color: white;
+    transition: all .3s ease 0s;
+}
+
+@media (max-width: 692px) 
+{
+    .tab .tab-nav 
+    {
+        display: block;
+        margin: 0 0 20px;
+    }
+    .tab .tab-nav label 
+    {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.tab .tab-content 
+{
+    overflow: hidden;
+    display: none;
+    background: #FFF;
+}
+.tab input[id='tabOne']:checked ~ .tab-nav label[for='tabOne'] 
+{
+    background: rgb(255,200,0);
+    color: white;
+    cursor: default;
+}
+.tab input[id='tabOne']:checked ~ div.tab-one 
+{
+    display: block;
+    border-top: solid 3px rgb(255,200,0);
+}
+.tab input[id='tabTwo']:checked ~ .tab-nav label[for='tabTwo'] 
+{
+    background: rgb(255,200,0);
+    color: white;
+    cursor: default;
+}
+.tab input[id='tabTwo']:checked ~ div.tab-two 
+{
+    display: block;
+    border-top: solid 3px rgb(255,200,0);
+}
+.tab input[id='tabThree']:checked ~ .tab-nav label[for='tabThree'] 
+{
+    background: rgb(255,200,0);
+    color: white;
+    cursor: default;
+}
+.tab input[id='tabThree']:checked ~ div.tab-three 
+{
+    display: block;
+    border-top: solid 3px rgb(255,200,0);
+}
+.table
+{
+    border: 2px;
+    border-color: rgb(255,200,0);
+    background-color: white;
+    text-align: center;
+}

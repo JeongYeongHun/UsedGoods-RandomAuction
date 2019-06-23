@@ -1,0 +1,313 @@
+body 
+{
+  background-image: url(bg.jpg);
+  background-attachment: fixed;
+}
+
+/************ nav-top style ***********/
+
+.nav-top
+{
+	background-color:rgba(50,50,50,0.8);
+	box-shadow:0px 1px 5px rgba(0,0,0,0.4);
+	height:80px;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:100;
+}
+.nav-top ul 
+{
+	text-align: left;
+    padding: 10px;
+}
+.nav-top ul li
+{
+  display: inline;
+  margin-right: 50px;
+}
+	
+.title
+{
+    padding: 0% 5% 0% 46.5%;
+    font-family: "Museo";
+    font-size: 40px;
+    color: #fff;
+}
+
+.title button
+{
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 190, 0),
+            0 0 70px rgb(255, 190, 0), 0 0 80px rgb(255, 190, 0), 0 0 100px rgb(255, 190, 0),
+            0 0 150px rgb(255, 190, 0);
+    opacity: 1;
+    display: inline-block;
+}
+
+.title button:hover
+{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.loginfo_balance
+{
+  position: absolute;
+  left: 1450px;
+  top: 47px;
+  height: 80px;
+	font-size : 18px;
+  color:white;
+  
+}
+
+.loginfo_id
+{
+  position: absolute;
+  left: 1450px;
+  top: 15px;
+  height: 80px;
+	font-size : 18px;
+  color:white;
+}
+
+.loginfo a
+{
+  padding: 20px;
+  margin-right: 20px;
+  font-size : 20px;
+  position: absolute;
+  left:92%;
+  color:rgb(255, 200, 0); 
+}
+
+.loginfo a:hover
+{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  color:rgb(255, 200, 0); 
+}
+
+a
+{
+  text-decoration:none !important;
+}
+
+  /*-------------------------------*/
+  /*        nav-side styles        */
+  /*-------------------------------*/
+  
+  .nav-side 
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    width: 220px;
+    display: none;
+    position: fixed;
+  }
+
+  .nav-side.active
+  {
+    display: block;
+  }
+
+  .nav-side li 
+  {
+    display: inline-block;
+    line-height: 20px;
+    position: relative;
+    width: 100%;
+    background-color:rgba(50,50,50,0.7);
+    padding: 20px;
+    transition: background 0.5s;
+    z-index: 1000;
+  }
+
+  .nav-side li:hover
+  {
+    background-color: rgba(255, 180, 0, 0.7);
+  }
+
+  .nav-side li:first-child
+  {
+    background-color: rgba(30,30,30,0.9);
+    font-size: 25px;
+    text-align: center;
+    color:rgb(255, 200, 0);
+  }
+
+  .nav-side li a
+  {
+    color:white;
+    font-size:16px;
+  }
+
+  .sidebar-nav li:hover:before {
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 100%;
+  }
+  
+  .sidebar-nav li a {
+    color: #dddddd;
+    display: block;
+    padding: 10px 15px 10px 30px;
+    text-decoration: none;
+  }
+  
+  .sidebar-nav li.open:hover before {
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 100%;
+  }
+  
+  .sidebar-nav .dropdown-menu 
+  {
+    background-color: rgba(30,30,30,0.7);
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  
+  .sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
+    background-color: transparent;
+    color: green;
+    text-decoration: none;
+  }
+  
+  .sidebar-nav > .sidebar-brand {
+    font-size: 30px;
+    height: 80px;
+    line-height: 60px;
+  }
+  
+  /*-------------------------------*/
+  /*       Menu Button             */
+  /*-------------------------------*/
+  
+  .hamburger {
+    background: transparent;
+    border: none;
+    display: block;
+    height: 36px;
+    margin-left: 30px;
+    position: fixed;
+    top: 25px;
+    width: 32px;
+    z-index: 999;
+  }
+  
+  .hamburger:hover { outline: none; }
+  
+  .hamburger:focus { outline: none; }
+  
+  .hamburger:active { outline: none; }
+  
+  .hamburger.is-closed:before {
+    transform: translate3d(0, 0, 0);
+    transition: all 0.35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .hamburger.is-closed:hover before {
+    transform: translate3d(-100px, 0, 0);
+    transition: all 0.35s ease-in-out;
+    display: block;
+    opacity: 1;
+  }
+  
+  .hamburger.is-closed:hover .hamb-top {
+    transition: all 0.35s ease-in-out;
+    top: 0;
+  }
+  
+  .hamburger.is-closed:hover .hamb-bottom {
+    transition: all 0.35s ease-in-out;
+    bottom: 0;
+  }
+  
+  .hamburger.is-closed .hamb-top {
+    transition: all 0.35s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 5px;
+  }
+  
+  .hamburger.is-closed .hamb-middle {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: -2px;
+    top: 50%;
+  }
+  
+  .hamburger.is-closed .hamb-bottom {
+    transition: all 0.35s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.7);
+    bottom: 5px;
+  }
+  
+  .hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .hamburger.is-open .hamb-top {
+    transform: rotate(45deg);
+    transition: transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+    background-color: #ffffff;
+    margin-top: -2px;
+    top: 50%;
+  }
+  
+  .hamburger.is-open .hamb-middle {
+    background-color: #ffffff;
+    display: none;
+  }
+  
+  .hamburger.is-open .hamb-bottom {
+    transform: rotate(-45deg);
+    transition: transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+    background-color: #ffffff;
+    margin-top: -2px;
+    top: 50%;
+  }
+  
+  .hamburger.is-open:before {
+    transform: translate3d(0, 0, 0);
+    transition: all 0.35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .hamburger.is-open:hover before {
+    transform: translate3d(-100px, 0, 0);
+    transition: all 0.35s ease-in-out;
+    display: block;
+    opacity: 1;
+  }
+  
+

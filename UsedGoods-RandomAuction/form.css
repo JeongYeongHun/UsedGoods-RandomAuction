@@ -1,0 +1,109 @@
+    .form
+    {
+      z-index: 15;
+      position: relative;
+      background: #FFFFFF;
+      width: 600px;
+      border-radius: 4px; 
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      margin: 150px auto 50px;
+      overflow: hidden;
+      opacity: 0.9;
+     }
+
+	.form-group 
+	{   
+      z-index: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify; 
+      justify-content: space-between;
+      margin: 0 0 20px;
+    }
+    .form-group label 
+    {
+      display: block;
+      margin: 0 0 10px;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+     }
+    .form-group input 
+    {
+      outline-color: rgb(255, 200, 0);
+      display: block;
+     background: rgba(0, 0, 0, 0.1);
+      width: 100%;
+      border: 0;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 12px 20px;
+      color: rgba(0, 0, 0, 0.6);
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 500;
+      line-height: inherit;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+    }
+    .form-group textarea
+    {
+      outline-color: rgb(255, 200, 0);
+      display: block;
+      background: rgba(0, 0, 0, 0.1);
+      width: 100%;
+      border: 0;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 12px 20px;
+      color: rgba(0, 0, 0, 0.6);
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 500;
+      line-height: inherit;
+      -webkit-transition: 0.3s ease;
+       transition: 0.3s ease;
+    }
+    .form-group input:focus 
+    {
+      color: rgba(0, 0, 0, 0.8);
+    }
+    .form-group button 
+    {
+      background:rgb(255, 200, 0);
+      width: 100%;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 20px;
+      color: #FFFFFF;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 500;
+      line-height: inherit;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .form-panel 
+    {
+      padding: 60px 60px 60px 60px;  
+      box-sizing: border-box;
+     }
+		.form-header
+		{
+			text-align: center;
+		}
+    h3
+    {
+       margin-bottom: 20px;
+    }
